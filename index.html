@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Lillian Lutzner</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h5>LL
+                <br>
+                <h6>Full Stack Developer</h6>
+            </h5>
+        </div>
+     
+        <ul>
+            <li><a target="_blank" href="https://github.com/lillianltz">github</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/lillian-lutzner-080ab645/">linkedin</a></li>
+            <li><a target="_blank" href="mailto:lillian.lutzner@gmail.com">e-mail</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Lillian Lutzner</h1>
+                <h4>Full Stack Developer    </h4>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angles-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Após mais de 9 anos no audiovisual, descobri minha apaixão por tecnologia. Atualmente estou em transição de carreira para Desenvolvimento Web Full Stack, cursando o 2o período de Análise e Desenvolvimento de Sistemas
+                    e com muito interesse por Machine Learning.
+                </p>
+            </div>
+
+            <div class="form">
+                <p>Deixe seu contato:</p>
+                    <form action="">
+                        <input type="text" placeholder="seu email">
+                        <button>enviar</button>
+                    </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
